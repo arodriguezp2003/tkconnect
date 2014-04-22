@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Turistik Connect</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	
+	<section class="chat">
+
+	</section>
+	<section class="chat_ventana">
+		<div class="titulo">
+			<div class="nombre">Alejandro Rodriguez</div>
+		</div>
+
+		<div class="info">
+
+		</div>
+		<div class="control">
+			<input id="xEnviar" type="text">
+		</div>
+	</section>
+	<footer>
+
+	</footer>
+
+	<script id="msn" type="text/x-handlebars-template">
+	<div class="mensaje_{{tipo}}">
+	<img src="/img/{{avatar}}">
+	<div class="mensaje">{{mensaje}}</div>
+	<div class="fecha">{{fecha}}</div>
+	<div style="clear:both;"></div>
+	</div>
+	</script>
+	<script id="depto" type="text/x-handlebars-template">
+
+	<div id="{{id}}"  class="departamento">
+	<div class="titulo">{{name}}</div>
+	</div>
+	</script>
+	<script id="user_t" type="text/x-handlebars-template">
+	<a href="javascript:click('{{id}}','{{name}}','{{avatar}}');" >
+	<div id="{{id}}" class="personas"  >
+	<img src="/img/{{avatar}}">
+	<div class="nombre">{{name}}</div>
+	<div class="ultimoMensaje">hola a todos</div>
+	<div class="fecha">12:35</div>
+	</div>
+	<a/>
+	</script>
+	<button onclick="ActivarPermiso();">Activar</button>
+	<script type="text/javascript" src="lib/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="lib/underscore.js"></script>
+	<script type="text/javascript" src="lib/handlebars-v1.3.0.js"></script>
+	<script type="text/javascript" src="lib/backbone.js"></script>
+	<script type="text/javascript" src="lib/momments.js"></script>
+	<script type="text/javascript" src="lib/scroll.js"></script>
+	<script type="text/javascript" src="js/Tk.connect.js"></script>
+	<script type="text/javascript" src='lib/socket.io.js' ></script>
+	<script type="text/javascript" src="js/notificaciones.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>						
