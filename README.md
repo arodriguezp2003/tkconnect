@@ -20,3 +20,7 @@ git add README2
 git commit -m "Primera Subida"
 
 git push origin master
+
+git pull origin master
+
+
