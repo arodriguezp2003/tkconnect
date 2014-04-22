@@ -12,6 +12,8 @@ ssh-keygen
 Arracando el Proyecto
 git init
 
+git remote add direccion
+
 touch README2
 git add README2
 
